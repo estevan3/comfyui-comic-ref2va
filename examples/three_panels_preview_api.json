@@ -1,0 +1,104 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "comic_ref2va_panel_1.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "comic_ref2va_panel_2.png"
+    }
+  },
+  "3": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "comic_ref2va_panel_3.png"
+    }
+  },
+  "4": {
+    "class_type": "LlamaVisionSettings",
+    "inputs": {
+      "model": "/home/<USER>/models/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf",
+      "mmproj": "/home/<USER>/models/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive/mmproj-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-f16.gguf",
+      "fit": "on",
+      "fitt": 128,
+      "fa": "on",
+      "batch_size": 2048,
+      "ubatch_size": 512,
+      "ctx_size": 8192,
+      "cache_type_k": "q8_0",
+      "cache_type_v": "q8_0",
+      "parallel": 1,
+      "threads": 6,
+      "host": "127.0.0.1",
+      "port": 8080,
+      "max_tokens": 4096,
+      "temperature": 0.0
+    }
+  },
+  "5": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 10
+    }
+  },
+  "6": {
+    "class_type": "ComicPanelsToMiniMaxH3Ref2VA",
+    "inputs": {
+      "analysis_prompt": "Inspect this single comic panel. Describe only visible evidence in English. Identify appearance, positions, posture, physical facial expressions, composition, environment, objects and visible action. Transcribe only clearly legible text, verbatim in its original language. An open mouth is not evidence of speech. Distinguish speech balloons from thoughts, narration, signs and sound effects. Leave uncertain balloon speakers null. Never invent dialogue, relationships, off-frame content, emotions or colors in monochrome artwork.",
+      "extra_instructions": "camera=static; pace=natural; motion=subtle",
+      "strict_mode": true,
+      "debug": false,
+      "llama_settings": [
+        "4",
+        0
+      ],
+      "images.image_1": [
+        "1",
+        0
+      ],
+      "images.image_2": [
+        "2",
+        0
+      ],
+      "images.image_3": [
+        "3",
+        0
+      ],
+      "duration": [
+        "5",
+        0
+      ],
+      "subject_overrides": ""
+    }
+  },
+  "7": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "6",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "6",
+        1
+      ]
+    }
+  },
+  "9": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "6",
+        2
+      ]
+    }
+  }
+}

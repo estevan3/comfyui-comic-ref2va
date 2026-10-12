@@ -1,0 +1,32 @@
+subject_definitions:
+<Picture 1> is the complete comic-page storyboard for this scene, providing character appearance, setting and event order; its layout is not a target frame.
+<Subject 1> from <Picture 1>: Human male, heavy build, short black hair, wearing a brown tunic over a green shirt; short black; brown tunic, green shirt; double chin; round face.
+<Subject 2> from <Picture 1>: Purple-skinned female demon with white hair, pointed ears, horns, wearing purple outfit and gold jewelry; white, spiky; purple outfit, black collar; gold hoop earrings, gold rings, purple wrist cuffs; purple skin; white horns; pointed ears.
+
+summary:
+[reference generation] Create a 28.542-second fully animated adaptation of <Picture 1>, preserving its characters, setting and event order. Use the comic page as a storyboard rather than a series of still keyframes.
+
+retention_analysis:
+<Picture 1>: partially_preserved - Preserve character identity, clothing, props, style, palette and event order; replace panel layout and lettering with cinematic animation.
+<Subject 1>: fully_preserved - Preserve identity and visual features while allowing natural movement and changing expressions.
+<Subject 2>: fully_preserved - Preserve identity and visual features while allowing natural movement and changing expressions.
+
+detailed_description:
+cartoon
+One continuous cinematic take with fully animated character acting adapted from <Picture 1>, changing poses and expressions. No cuts or camera resets between action phases. Use the page as a storyboard, not as a displayed collage or a frozen first frame. Remove panel borders, gutters, speech and thought balloons, captions, sound-effect lettering and watermarks. No subtitles, floating text or visual speaker tags. Dialogue is spoken audio only. Only the identified speaker mouths each line; listeners react silently. Use only the explicitly attributed spoken lines below; no additional words or voice-over. No slideshow transitions, page pans, pose morphs or motion-blur joins between still pictures.
+[Shot 1] <Subject 1>: The man places a heavy stack of three books onto the wooden counter with a thud. <Subject 1> (S1) says, <d>[English] GLAD TO HEAR I WAS WORRIED HE WAS NEVER GONNA PICK UP THIS STUFF!</d> Continue the same shot smoothly through 00:02.744, preserving identity, contact and prop placement; this action phase lasts 2.744 seconds.
+At 00:02.744, <Subject 1>: The man leans forward over the counter, resting his chin on his hand with a thoughtful expression. <Subject 1> (S1) says, <d>[English] HEY! I RECOGNIZE THOSE SHACKLES!</d> <Subject 1> (S1) says, <d>[English] YOU MUST BE THE 'GEEK' DEMON. HE WAS TRYING TO SUMMON A FEW MONTHS BACK.</d> Continue the same shot smoothly through 00:04.940, preserving identity, contact and prop placement; this action phase lasts 2.196 seconds.
+At 00:04.940, <Subject 2>: The demon woman sighs and looks down at her wrists, her expression shifting from annoyance to realization. <Subject 2> (S2) says, <d>[English] SIGH. I'M NOT A... WAIT!</d> Continue the same shot smoothly through 00:07.684, preserving identity, contact and prop placement; this action phase lasts 2.744 seconds.
+At 00:07.684, <Subject 2>: The demon woman looks up sharply at the man, her eyes narrowing as she notices his recognition. <Subject 2> (S2) says, <d>[English] YOU KNOW ABOUT THESE?</d> Continue the same shot smoothly through 00:09.880, preserving identity, contact and prop placement; this action phase lasts 2.196 seconds.
+At 00:09.880, <Subject 1>: The man shrugs casually, maintaining a confident smile while leaning on the counter. <Subject 1> (S1) says, <d>[English] SURE, I SOLD THEM TO HIM.</d> Continue the same shot smoothly through 00:12.075, preserving identity, contact and prop placement; this action phase lasts 2.195 seconds.
+At 00:12.075, <Subject 2>: The demon woman lunges forward, grabbing the man by the collar and yanking him across the counter. <Subject 2> (S2) says, <d>[English] GET THEM OFF OF ME!</d> Continue the same shot smoothly through 00:14.820, preserving identity, contact and prop placement; this action phase lasts 2.745 seconds.
+At 00:14.820, <Subject 1>: The man struggles against the grip, his face contorted in shock and discomfort as he is held face-to-face with the demon. <Subject 1> (S1) says, <d>[English] HEY! SLOW YOUR ROLL, CHICK!</d> Continue the same shot smoothly through 00:17.564, preserving identity, contact and prop placement; this action phase lasts 2.744 seconds.
+At 00:17.564, <Subject 1>: The man continues to struggle, trying to speak while maintaining eye contact with the angry demon. <Subject 1> (S1) says, <d>[English] NOW, IF YOU GIVE ME A MOMENT TO EXPLAIN...</d> Continue the same shot smoothly through 00:20.309, preserving identity, contact and prop placement; this action phase lasts 2.745 seconds.
+At 00:20.309, <Subject 1>: The man keeps talking, his expression shifting to a mix of explanation and slight fear as he explains the nature of the shackles. <Subject 1> (S1) says, <d>[English] SEE, THOSE SHACKLES ARE A HIGH LEVEL CURSED ITEM. THEY CAN'T BE REMOVED. THAT'S WHY I HAD SUCH A HARD TIME SELLING 'EM IN THE FIRST PLACE.</d> Continue the same shot smoothly through 00:25.798, preserving identity, contact and prop placement; this action phase lasts 5.489 seconds.
+At 00:25.798, <Subject 1>: The man delivers the final line with a cheeky grin, still held captive by the demon. <Subject 1> (S1) says, <d>[English] OH, AND I DID A THOUSAND DEMONTY ON YOU BABES.</d> Continue the same shot smoothly through 00:28.542, preserving identity, contact and prop placement; this action phase lasts 2.744 seconds.
+
+overall_soundscape:
+Use modest physical sounds synchronized with the described actions, without adding unrelated sources. Keep confirmed speech prominent and intelligible.
+
+non_diegetic_music:
+N/A

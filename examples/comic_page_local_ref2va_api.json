@@ -1,0 +1,287 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "comic_page_reference.png"
+    }
+  },
+  "2": {
+    "class_type": "PrimitiveFloat",
+    "inputs": {
+      "value": 28.0
+    }
+  },
+  "3": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "2",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "ComfyMathExpression",
+    "inputs": {
+      "expression": "a / 24",
+      "values.a": [
+        "3",
+        1
+      ]
+    }
+  },
+  "5": {
+    "class_type": "LlamaVisionSettings",
+    "inputs": {
+      "model": "/home/<USER>/models/unsloth/Qwen3.6-35B-A3B-MTP-GGUF/Qwen3.6-35B-A3B-UD-IQ4_NL.gguf",
+      "mmproj": "/home/<USER>/models/unsloth/Qwen3.6-35B-A3B-MTP-GGUF/mmproj-BF16.gguf",
+      "fit": "on",
+      "fitt": 128,
+      "fa": "on",
+      "batch_size": 2048,
+      "ubatch_size": 512,
+      "ctx_size": 16384,
+      "cache_type_k": "q8_0",
+      "cache_type_v": "q8_0",
+      "parallel": 1,
+      "threads": 6,
+      "host": "127.0.0.1",
+      "port": 8092,
+      "startup_timeout": 300,
+      "reasoning": "off",
+      "max_tokens": 8192,
+      "temperature": 0.3,
+      "request_timeout": 600,
+      "reasoning_budget": -1,
+      "no_mmproj_offload": true,
+      "image_min_tokens": 1024,
+      "image_max_tokens": 1536,
+      "mtp": false,
+      "spec_draft_n_max": 3,
+      "spec_draft_n_min": 0
+    }
+  },
+  "6": {
+    "class_type": "ComicPageToMiniMaxH3Ref2VA",
+    "inputs": {
+      "llama_settings": [
+        "5",
+        0
+      ],
+      "image": [
+        "1",
+        0
+      ],
+      "duration": [
+        "4",
+        0
+      ],
+      "scene_prompt": "Adapt the comic into a fully animated scene, with physical actions, interactions, changing expressions and silent listener reactions. Connect the states shown in the panels with plausible movement. Plan successive action beats within one continuous cinematic take, independently of panel count. The camera follows the action without cuts or resets. Avoid frozen poses, page zooms, panel swaps, slideshow transitions and motion-blur joins between still pictures. Preserve the story's event order."
+    }
+  },
+  "7": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "6",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "6",
+        1
+      ]
+    }
+  },
+  "10": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "6",
+        2
+      ]
+    }
+  },
+  "127": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "h3ErosMax_beta5_fp8.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "128": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "119": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "120": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "136": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "128",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ],
+      "audio_vae": [
+        "120",
+        0
+      ],
+      "prompt": [
+        "6",
+        0
+      ],
+      "width": 864,
+      "height": 480,
+      "length": [
+        "3",
+        1
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "1",
+        0
+      ]
+    }
+  },
+  "123": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "124": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 30,
+      "denoise": 1.0
+    }
+  },
+  "126": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "127",
+        0
+      ],
+      "conditioning": [
+        "136",
+        0
+      ]
+    }
+  },
+  "129": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 42
+    }
+  },
+  "125": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "129",
+        0
+      ],
+      "guider": [
+        "126",
+        0
+      ],
+      "sampler": [
+        "123",
+        0
+      ],
+      "sigmas": [
+        "124",
+        0
+      ],
+      "latent_image": [
+        "136",
+        1
+      ]
+    }
+  },
+  "122": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "119",
+        0
+      ]
+    }
+  },
+  "121": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "120",
+        0
+      ]
+    }
+  },
+  "130": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "122",
+        0
+      ],
+      "audio": [
+        "121",
+        0
+      ],
+      "fps": 24.0,
+      "bit_depth": 8,
+      "color_space": "sRGB",
+      "codec": "none"
+    }
+  },
+  "92": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "130",
+        0
+      ],
+      "filename_prefix": "video/Comic_Continuous_Local",
+      "format": "auto",
+      "codec": "auto",
+      "bit_depth": "auto"
+    }
+  }
+}

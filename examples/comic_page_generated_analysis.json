@@ -1,0 +1,542 @@
+{
+  "page": {
+    "observed": {
+      "palette": "color",
+      "style": "cartoon",
+      "composition": "six-panel grid (2x3)",
+      "characters": [
+        {
+          "id": "c1",
+          "appearance": "Human male, heavy build, short black hair, wearing a brown tunic over a green shirt",
+          "hair": "short black",
+          "clothing": "brown tunic, green shirt",
+          "accessories": "",
+          "distinctive_features": [
+            "double chin",
+            "round face"
+          ],
+          "position": "varies by panel",
+          "posture": "seated at counter, standing, leaning forward",
+          "expression": "smiling, surprised, angry, explaining"
+        },
+        {
+          "id": "c2",
+          "appearance": "Purple-skinned female demon with white hair, pointed ears, horns, wearing purple outfit and gold jewelry",
+          "hair": "white, spiky",
+          "clothing": "purple outfit, black collar",
+          "accessories": "gold hoop earrings, gold rings, purple wrist cuffs",
+          "distinctive_features": [
+            "purple skin",
+            "white horns",
+            "pointed ears"
+          ],
+          "position": "standing at counter, grappling with c1",
+          "posture": "standing, leaning in, grappling",
+          "expression": "annoyed, struggling, angry"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "kind": "object",
+          "description": "stack of three books on counter"
+        },
+        {
+          "id": "f2",
+          "kind": "object",
+          "description": "wooden counter/bar"
+        },
+        {
+          "id": "f3",
+          "kind": "object",
+          "description": "purple shackles on c2's wrists"
+        },
+        {
+          "id": "f4",
+          "kind": "action",
+          "description": "c1 placing books on counter"
+        },
+        {
+          "id": "f5",
+          "kind": "action",
+          "description": "c2 grabbing c1's collar"
+        },
+        {
+          "id": "f6",
+          "kind": "action",
+          "description": "c1 and c2 face-to-face in confrontation"
+        }
+      ],
+      "texts": [
+        {
+          "id": "t1",
+          "kind": "speech",
+          "text": "GLAD TO HEAR I WAS WORRIED HE WAS NEVER GONNA PICK UP THIS STUFF!",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.0312,
+            0.0833,
+            0.2812,
+            0.1944
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t2",
+          "kind": "speech",
+          "text": "HEY! I RECOGNIZE THOSE SHACKLES!",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.3125,
+            0.0833,
+            0.5312,
+            0.1389
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t3",
+          "kind": "sfx",
+          "text": "FWLUMP",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.3438,
+            0.2222,
+            0.5938,
+            0.2778
+          ],
+          "speaker": null,
+          "attribution_method": "uncertain",
+          "attribution_evidence": "sound effect text"
+        },
+        {
+          "id": "t4",
+          "kind": "speech",
+          "text": "YOU MUST BE THE 'GEEK' DEMON. HE WAS TRYING TO SUMMON A FEW MONTHS BACK.",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.5469,
+            0.0833,
+            0.8438,
+            0.1944
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t5",
+          "kind": "speech",
+          "text": "NOT BAD AT ALL BOSS.",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.875,
+            0.1389,
+            0.9688,
+            0.1667
+          ],
+          "speaker": null,
+          "attribution_method": "uncertain",
+          "attribution_evidence": "no clear speaker attribution"
+        },
+        {
+          "id": "t6",
+          "kind": "speech",
+          "text": "SIGH. I'M NOT A... WAIT!",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.0312,
+            0.3611,
+            0.1562,
+            0.4167
+          ],
+          "speaker": "c2",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c2"
+        },
+        {
+          "id": "t7",
+          "kind": "speech",
+          "text": "YOU KNOW ABOUT THESE?",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.1875,
+            0.3889,
+            0.3125,
+            0.4444
+          ],
+          "speaker": "c2",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c2"
+        },
+        {
+          "id": "t8",
+          "kind": "speech",
+          "text": "SURE, I SOLD THEM TO HIM.",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.0312,
+            0.4444,
+            0.1875,
+            0.5
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t9",
+          "kind": "speech",
+          "text": "GET THEM OFF OF ME!",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.3438,
+            0.3889,
+            0.5625,
+            0.4444
+          ],
+          "speaker": "c2",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c2"
+        },
+        {
+          "id": "t10",
+          "kind": "speech",
+          "text": "HEY! SLOW YOUR ROLL, CHICK!",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.3438,
+            0.6944,
+            0.5,
+            0.75
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t11",
+          "kind": "speech",
+          "text": "NOW, IF YOU GIVE ME A MOMENT TO EXPLAIN...",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.5469,
+            0.6111,
+            0.8438,
+            0.6667
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t12",
+          "kind": "speech",
+          "text": "SEE, THOSE SHACKLES ARE A HIGH LEVEL CURSED ITEM. THEY CAN'T BE REMOVED. THAT'S WHY I HAD SUCH A HARD TIME SELLING 'EM IN THE FIRST PLACE.",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.5469,
+            0.6667,
+            0.9688,
+            0.8333
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t13",
+          "kind": "speech",
+          "text": "OH, AND I DID A THOUSAND DEMONTY ON YOU BABES.",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.5469,
+            0.7778,
+            0.7812,
+            0.8333
+          ],
+          "speaker": "c1",
+          "attribution_method": "balloon_tail",
+          "attribution_evidence": "balloon tail points to c1"
+        },
+        {
+          "id": "t14",
+          "kind": "caption",
+          "text": "© manaworldcomics.com",
+          "language": "English",
+          "legible": true,
+          "bbox": [
+            0.5469,
+            0.9722,
+            0.9688,
+            0.9861
+          ],
+          "speaker": null,
+          "attribution_method": "uncertain",
+          "attribution_evidence": "copyright notice"
+        }
+      ]
+    },
+    "inferred": {
+      "motions": [
+        {
+          "character_id": "c1",
+          "evidence_id": "f4",
+          "kind": "continue_action",
+          "description": "placing books on counter"
+        },
+        {
+          "character_id": "c2",
+          "evidence_id": "f5",
+          "kind": "continue_action",
+          "description": "grabbing c1's collar"
+        },
+        {
+          "character_id": "c1",
+          "evidence_id": "f6",
+          "kind": "continue_action",
+          "description": "face-to-face confrontation with c2"
+        }
+      ]
+    },
+    "sounds": []
+  },
+  "scene_plan": {
+    "beats": [
+      {
+        "weight": 10.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f4"
+            ],
+            "description": "The man places a heavy stack of three books onto the wooden counter with a thud."
+          }
+        ],
+        "text_ids": [
+          "t1"
+        ]
+      },
+      {
+        "weight": 8.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f2"
+            ],
+            "description": "The man leans forward over the counter, resting his chin on his hand with a thoughtful expression."
+          }
+        ],
+        "text_ids": [
+          "t2",
+          "t4"
+        ]
+      },
+      {
+        "weight": 10.0,
+        "actions": [
+          {
+            "character_id": "c2",
+            "evidence_ids": [
+              "f3"
+            ],
+            "description": "The demon woman sighs and looks down at her wrists, her expression shifting from annoyance to realization."
+          }
+        ],
+        "text_ids": [
+          "t6"
+        ]
+      },
+      {
+        "weight": 8.0,
+        "actions": [
+          {
+            "character_id": "c2",
+            "evidence_ids": [
+              "f3"
+            ],
+            "description": "The demon woman looks up sharply at the man, her eyes narrowing as she notices his recognition."
+          }
+        ],
+        "text_ids": [
+          "t7"
+        ]
+      },
+      {
+        "weight": 8.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f2"
+            ],
+            "description": "The man shrugs casually, maintaining a confident smile while leaning on the counter."
+          }
+        ],
+        "text_ids": [
+          "t8"
+        ]
+      },
+      {
+        "weight": 10.0,
+        "actions": [
+          {
+            "character_id": "c2",
+            "evidence_ids": [
+              "f5"
+            ],
+            "description": "The demon woman lunges forward, grabbing the man by the collar and yanking him across the counter."
+          }
+        ],
+        "text_ids": [
+          "t9"
+        ]
+      },
+      {
+        "weight": 10.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f6"
+            ],
+            "description": "The man struggles against the grip, his face contorted in shock and discomfort as he is held face-to-face with the demon."
+          }
+        ],
+        "text_ids": [
+          "t10"
+        ]
+      },
+      {
+        "weight": 10.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f6"
+            ],
+            "description": "The man continues to struggle, trying to speak while maintaining eye contact with the angry demon."
+          }
+        ],
+        "text_ids": [
+          "t11"
+        ]
+      },
+      {
+        "weight": 20.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f6"
+            ],
+            "description": "The man keeps talking, his expression shifting to a mix of explanation and slight fear as he explains the nature of the shackles."
+          }
+        ],
+        "text_ids": [
+          "t12"
+        ]
+      },
+      {
+        "weight": 10.0,
+        "actions": [
+          {
+            "character_id": "c1",
+            "evidence_ids": [
+              "f6"
+            ],
+            "description": "The man delivers the final line with a cheeky grin, still held captive by the demon."
+          }
+        ],
+        "text_ids": [
+          "t13"
+        ]
+      }
+    ]
+  },
+  "timing": [
+    {
+      "beat": 1,
+      "start_ms": 0,
+      "end_ms": 2744
+    },
+    {
+      "beat": 2,
+      "start_ms": 2744,
+      "end_ms": 4940
+    },
+    {
+      "beat": 3,
+      "start_ms": 4940,
+      "end_ms": 7684
+    },
+    {
+      "beat": 4,
+      "start_ms": 7684,
+      "end_ms": 9880
+    },
+    {
+      "beat": 5,
+      "start_ms": 9880,
+      "end_ms": 12075
+    },
+    {
+      "beat": 6,
+      "start_ms": 12075,
+      "end_ms": 14820
+    },
+    {
+      "beat": 7,
+      "start_ms": 14820,
+      "end_ms": 17564
+    },
+    {
+      "beat": 8,
+      "start_ms": 17564,
+      "end_ms": 20309
+    },
+    {
+      "beat": 9,
+      "start_ms": 20309,
+      "end_ms": 25798
+    },
+    {
+      "beat": 10,
+      "start_ms": 25798,
+      "end_ms": 28542
+    }
+  ],
+  "duration_seconds": 28.541666666666668,
+  "speakers": {
+    "c1": 1,
+    "c2": 2
+  },
+  "warnings": [
+    "Text t5: unreadable text or uncertain speaker was omitted; review the source page.",
+    "Beat 1: confirmed dialogue may need about 5.9s but has 2.744s. Increase duration or select a shorter scene.",
+    "Beat 2: confirmed dialogue may need about 8.6s but has 2.196s. Increase duration or select a shorter scene.",
+    "Beat 5: confirmed dialogue may need about 2.7s but has 2.195s. Increase duration or select a shorter scene.",
+    "Beat 8: confirmed dialogue may need about 3.9s but has 2.745s. Increase duration or select a shorter scene.",
+    "Beat 9: confirmed dialogue may need about 11.9s but has 5.489s. Increase duration or select a shorter scene.",
+    "Beat 10: confirmed dialogue may need about 4.3s but has 2.744s. Increase duration or select a shorter scene."
+  ]
+}

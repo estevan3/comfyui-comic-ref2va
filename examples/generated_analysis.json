@@ -1,0 +1,250 @@
+{
+  "panels": [
+    {
+      "picture": 1,
+      "shot": 1,
+      "start_ms": 0,
+      "end_ms": 3333,
+      "analysis": {
+        "observed": {
+          "palette": "monochrome",
+          "style": "simple/cartoon",
+          "composition": "Centered character, full body shot, standing on a horizontal ground line against a plain background.",
+          "characters": [
+            {
+              "id": "c1",
+              "appearance": "Simple, stylized human figure.",
+              "hair": "Black, short, blocky.",
+              "clothing": "Light-colored tunic/shirt, dark-colored pants.",
+              "accessories": "",
+              "distinctive_features": [
+                "Simple, round head",
+                "Inverted triangle emblem on chest"
+              ],
+              "position": "Centered, standing upright.",
+              "posture": "Upright, balanced.",
+              "expression": "Eyes: Two simple dots; Brows: Simple line; Mouth: Simple curved line (smile)."
+            }
+          ],
+          "facts": [
+            {
+              "id": "f1",
+              "kind": "environment",
+              "description": "Horizontal ground line forming the base of the panel."
+            },
+            {
+              "id": "f2",
+              "kind": "object",
+              "description": "Light-colored tunic/shirt worn by c1."
+            },
+            {
+              "id": "f3",
+              "kind": "object",
+              "description": "Dark-colored pants worn by c1."
+            },
+            {
+              "id": "f4",
+              "kind": "object",
+              "description": "Small, inverted triangle emblem centered on the chest of the tunic."
+            },
+            {
+              "id": "f5",
+              "kind": "object",
+              "description": "Simple stick-like limbs (arms and legs) of c1."
+            },
+            {
+              "id": "f6",
+              "kind": "object",
+              "description": "A small, solid circle located near the character's extended right hand."
+            }
+          ],
+          "texts": []
+        },
+        "inferred": {
+          "motions": [
+            {
+              "character_id": "c1",
+              "evidence_id": "f5",
+              "kind": "hold",
+              "description": "Standing still with arms extended."
+            }
+          ]
+        },
+        "sounds": []
+      }
+    },
+    {
+      "picture": 2,
+      "shot": 2,
+      "start_ms": 3333,
+      "end_ms": 6666,
+      "analysis": {
+        "observed": {
+          "palette": "monochrome",
+          "style": "simple comic book",
+          "composition": "Centered character against a flat ground line, with a speech balloon positioned in the upper right quadrant.",
+          "characters": [
+            {
+              "id": "c1",
+              "appearance": "Simple, blocky figure with a round face.",
+              "hair": "Black, blocky/square.",
+              "clothing": "White tunic/shirt.",
+              "accessories": "",
+              "distinctive_features": [
+                "Simple round face",
+                "Small black dot eyes",
+                "Simple horizontal mouth line"
+              ],
+              "position": "Standing, centered in the panel.",
+              "posture": "Upright, relaxed.",
+              "expression": "Eyes: Simple dots. Brows: Simple line (neutral). Mouth: Simple horizontal line (neutral)."
+            }
+          ],
+          "facts": [
+            {
+              "id": "f1",
+              "kind": "environment",
+              "description": "A flat, horizontal ground line forming the base of the panel."
+            },
+            {
+              "id": "f2",
+              "kind": "object",
+              "description": "A white oval speech balloon with a tail pointing toward c1."
+            },
+            {
+              "id": "f3",
+              "kind": "action",
+              "description": "c1's right arm is extended outward and slightly upward, hand open in a gesturing motion."
+            }
+          ],
+          "texts": [
+            {
+              "id": "t1",
+              "kind": "speech",
+              "text": "Wait!",
+              "language": "English",
+              "legible": true,
+              "bbox": [
+                0.58,
+                0.55,
+                0.89,
+                0.7
+              ],
+              "speaker": "c1",
+              "attribution_method": "balloon_tail",
+              "attribution_evidence": "The tail of the speech balloon points directly to c1."
+            }
+          ]
+        },
+        "inferred": {
+          "motions": [
+            {
+              "character_id": "c1",
+              "evidence_id": "f3",
+              "kind": "hold",
+              "description": "Maintaining the extended arm gesture."
+            }
+          ]
+        },
+        "sounds": [
+          {
+            "kind": "wind",
+            "evidence_id": "f3",
+            "visual_evidence": "The extended arm gesture suggests a potential wind or movement effect.",
+            "layer": "ambience",
+            "timing": "throughout"
+          }
+        ]
+      }
+    },
+    {
+      "picture": 3,
+      "shot": 3,
+      "start_ms": 6666,
+      "end_ms": 10000,
+      "analysis": {
+        "observed": {
+          "palette": "monochrome",
+          "style": "simple cartoon/minimalist",
+          "composition": "Centered character standing on a horizontal ground line, occupying the majority of the frame.",
+          "characters": [
+            {
+              "id": "c1",
+              "appearance": "Simple geometric shapes",
+              "hair": "Black, rectangular block",
+              "clothing": "White body/torso, simple white rectangular legs",
+              "accessories": "",
+              "distinctive_features": [
+                "Two simple dot eyes",
+                "Simple upward curved mouth"
+              ],
+              "position": "Centered, standing on the ground line",
+              "posture": "Upright and balanced",
+              "expression": "Eyes: Two dots; Brows: Flat; Mouth: Simple upward curve"
+            }
+          ],
+          "facts": [
+            {
+              "id": "f1",
+              "kind": "environment",
+              "description": "A single horizontal line forming the ground/floor."
+            },
+            {
+              "id": "f2",
+              "kind": "object",
+              "description": "The main white torso/body of the character."
+            },
+            {
+              "id": "f3",
+              "kind": "object",
+              "description": "The simple circular head of the character."
+            },
+            {
+              "id": "f4",
+              "kind": "object",
+              "description": "The black, rectangular block of hair atop the head."
+            },
+            {
+              "id": "f5",
+              "kind": "object",
+              "description": "The character's right arm (viewer's left) extended outward and slightly upward."
+            },
+            {
+              "id": "f6",
+              "kind": "object",
+              "description": "Two simple vertical rectangular legs."
+            },
+            {
+              "id": "f7",
+              "kind": "action",
+              "description": "The character is standing upright on the ground."
+            }
+          ],
+          "texts": []
+        },
+        "inferred": {
+          "motions": [
+            {
+              "character_id": "c1",
+              "evidence_id": "f7",
+              "kind": "hold",
+              "description": "Standing upright"
+            }
+          ]
+        },
+        "sounds": []
+      }
+    }
+  ],
+  "subjects": [],
+  "speakers": [
+    {
+      "identity": [
+        2,
+        "c1"
+      ],
+      "speaker": 1
+    }
+  ],
+  "warnings": []
+}
